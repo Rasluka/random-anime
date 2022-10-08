@@ -4,6 +4,7 @@ import { changeTabTitle } from "./utils/changeTabTitle";
 import NavigationBar from "./components/Navbar";
 import PageFooter from "./components/PageFooter";
 import AboutMe from "./components/AboutMe";
+import Home from "./components/Home";
 
 function App() {
   changeTabTitle("Home");
@@ -14,10 +15,10 @@ function App() {
         <NavigationBar />
       </div>
       <Routes>
-        {/* <Route path="/my-fav-movies-fe" element={<Landing />} /> */}
+        <Route path="/random-anime/" element={<Home />} />
         {/* <Route path="/my-fav-movies-fe/myfavs" element={<MyFavorites />} /> */}
         {/* <Route path="/my-fav-movies-fe/createlist" element={<ListCreator />} /> */}
-        <Route path="/aboutme" element={<AboutMe />} />
+        <Route path="/random-anime/aboutme" element={<AboutMe />} />
       </Routes>
 
       <PageFooter />
