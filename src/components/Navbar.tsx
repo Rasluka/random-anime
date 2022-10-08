@@ -1,4 +1,5 @@
 import { Navbar } from "flowbite-react";
+import { Link } from "react-router-dom";
 
 export default function NavigationBar() {
   return (
@@ -15,10 +16,20 @@ export default function NavigationBar() {
       </Navbar.Brand>
       <Navbar.Toggle />
       <Navbar.Collapse>
-        <Navbar.Link href="/random-anime/">Home</Navbar.Link>
-        <Navbar.Link href="/random-anime/">My Favs</Navbar.Link>
-        <Navbar.Link href="/random-anime/">Create Your List</Navbar.Link>
-        <Navbar.Link href="/random-anime/aboutme">About Me V3</Navbar.Link>
+        <Navbar.Link>
+          {" "}
+          <Link to="/">Home</Link>
+        </Navbar.Link>
+        <Navbar.Link href="/">
+          <Link to="/">Option @!@</Link>
+        </Navbar.Link>
+        <Navbar.Link href="/">
+          <Link to="/">Option @!@</Link>
+        </Navbar.Link>
+        <Navbar.Link>
+          {" "}
+          <Link to="/aboutme">About Me V3</Link>
+        </Navbar.Link>
       </Navbar.Collapse>
     </Navbar>
   );

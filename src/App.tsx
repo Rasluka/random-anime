@@ -15,10 +15,8 @@ function App() {
         <NavigationBar />
       </div>
       <Routes>
-        <Route path="/random-anime/" element={<Home />} />
-        {/* <Route path="/my-fav-movies-fe/myfavs" element={<MyFavorites />} /> */}
-        {/* <Route path="/my-fav-movies-fe/createlist" element={<ListCreator />} /> */}
-        <Route path="/random-anime/aboutme" element={<AboutMe />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/aboutme" element={<AboutMe />} />
       </Routes>
 
       <PageFooter />
