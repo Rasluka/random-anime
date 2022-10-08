@@ -15,10 +15,10 @@ export default function NavigationBar() {
       </Navbar.Brand>
       <Navbar.Toggle />
       <Navbar.Collapse>
-        <Navbar.Link href="/">Home</Navbar.Link>
-        <Navbar.Link href="/">My Favs</Navbar.Link>
-        <Navbar.Link href="/">Create Your List</Navbar.Link>
-        <Navbar.Link href="/aboutme">About Me</Navbar.Link>
+        <Navbar.Link href="/random-anime/">Home</Navbar.Link>
+        <Navbar.Link href="/random-anime/">My Favs</Navbar.Link>
+        <Navbar.Link href="/random-anime/">Create Your List</Navbar.Link>
+        <Navbar.Link href="/random-anime/aboutme">About Me V3</Navbar.Link>
       </Navbar.Collapse>
     </Navbar>
   );
