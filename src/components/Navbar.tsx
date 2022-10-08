@@ -18,7 +18,7 @@ export default function NavigationBar() {
         <Navbar.Link href="/">Home</Navbar.Link>
         <Navbar.Link href="/">My Favs</Navbar.Link>
         <Navbar.Link href="/">Create Your List</Navbar.Link>
-        <Navbar.Link href="/random-anime/aboutme">About Me</Navbar.Link>
+        <Navbar.Link href="/aboutme">About Me</Navbar.Link>
       </Navbar.Collapse>
     </Navbar>
   );
