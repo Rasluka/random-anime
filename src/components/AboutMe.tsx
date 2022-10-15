@@ -7,7 +7,7 @@ export default function AboutThis() {
       <div className="flex flex-col items-center pb-10 px-4 pt-4">
         <img
           className="mb-3 w-24 h-24 rounded-full shadow-lg hover:scale-110"
-          src="https://raw.githubusercontent.com/Rasluka/my-fav-movies-fe/main/public/me.jpeg"
+          src={process.env.PUBLIC_URL + "/me.jpeg"}
           alt="me"
         />
         <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
@@ -24,7 +24,7 @@ export default function AboutThis() {
             className="inline-flex items-center py-2 px-4 text-sm font-medium text-center text-gray-900 bg-white rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700 dark:focus:ring-gray-700"
           >
             <img
-              src="https://raw.githubusercontent.com/Rasluka/my-fav-movies-fe/9f3dd362d3c6bd5c95b49e701284dfe215a5f4c0/public/linkedin.svg"
+              src={process.env.PUBLIC_URL + "/linkedin.svg"}
               className="mr-2 -ml-1 w-5 h-5"
               alt="me"
             />
@@ -37,7 +37,7 @@ export default function AboutThis() {
             className="inline-flex items-center py-2 px-4 text-sm font-medium text-center text-gray-900 bg-white rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700 dark:focus:ring-gray-700"
           >
             <img
-              src="https://raw.githubusercontent.com/Rasluka/my-fav-movies-fe/9f3dd362d3c6bd5c95b49e701284dfe215a5f4c0/public/github.svg"
+              src={process.env.PUBLIC_URL + "/github.svg"}
               className="mr-2 -ml-1 w-5 h-5"
               alt="me"
             />
@@ -82,7 +82,7 @@ export default function AboutThis() {
           <div className="flex items-center justify-center my-4">
             <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
               <img
-                src="https://raw.githubusercontent.com/Rasluka/my-fav-movies-fe/9f3dd362d3c6bd5c95b49e701284dfe215a5f4c0/public/react.svg"
+                src={process.env.PUBLIC_URL + "/react.svg"}
                 className="mx-5 w-10 h-10 hover:scale-110"
                 alt="react-icon"
               />
@@ -90,7 +90,7 @@ export default function AboutThis() {
 
             <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer">
               <img
-                src="https://raw.githubusercontent.com/Rasluka/my-fav-movies-fe/9f3dd362d3c6bd5c95b49e701284dfe215a5f4c0/public/tailwind-css.svg"
+                src={process.env.PUBLIC_URL + "/tailwind-css.svg"}
                 className="mx-5 w-15 h-10 hover:scale-110"
                 alt="tailwind-icon"
               />
@@ -102,7 +102,7 @@ export default function AboutThis() {
               rel="noreferrer"
             >
               <img
-                src="https://raw.githubusercontent.com/Rasluka/my-fav-movies-fe/9f3dd362d3c6bd5c95b49e701284dfe215a5f4c0/public/typescript.svg"
+                src={process.env.PUBLIC_URL + "/typescript.svg"}
                 className="mx-5 w-10 h-10  hover:scale-110"
                 alt="ts-icon"
               />
