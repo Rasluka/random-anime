@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { changeTabTitle } from "../utils/changeTabTitle";
-import { Label, TextInput } from "flowbite-react";
+import { TextInput } from "flowbite-react";
 import { FaSearch } from "react-icons/fa";
 // import { getTopAnimes } from "../services/animeService";
+import AnimeSmallCard from "./anime/AnimeSmallCard";
 import { IFullAnime } from "../interfaces/fullAnime.interface";
-import { Card } from "flowbite-react";
+import { Carousel } from "flowbite-react";
 
 export default function Home() {
   changeTabTitle("Home");
@@ -957,7 +958,7 @@ export default function Home() {
   });
 
   const mapSmalAnimeCard = (anAnime: IFullAnime) => {
-    return <SmallAnimeCard {...anAnime} />;
+    return <AnimeSmallCard {...anAnime} />;
   };
 
   useEffect(() => {
@@ -990,45 +991,46 @@ export default function Home() {
           className="h-48 w-48 mx-auto"
           alt="Main Logo"
         />
-        <div className="mb-2 block text-center text-4xl">
-          <Label htmlFor="searchInput" value="Search anime" />
-        </div>
+        <h1 className="text-2xl text-center my-5 font-bold ">Search Anime</h1>
         <div className="w-2/6 mx-auto">
           <TextInput
             id="searchInput"
             type="text"
-            placeholder="Enter an anime name"
+            placeholder="David es Gay"
             required={true}
             icon={FaSearch}
           />
         </div>
       </div>
 
-      <div className="bg-slate-800">
-        <h1>Top Favorites Animes</h1>
-        {topFavAnimes.components}
+      <div className="md:inline-grid md:grid-cols-3 md:gap-0">
+        <div className="md:w-full">
+          <h1 className="text-2xl text-center my-5 font-bold ">
+            Most Popular Animes
+          </h1>
+          {/* <div className="grid md:grid-cols-3 md:gap-4">
+          
+        </div> */}
+
+          <Carousel slideInterval={4000}>{topFavAnimes.components}</Carousel>
+        </div>
+
+        <div className="md:w-full">
+          <h1 className="text-2xl text-center my-5 font-bold ">
+            Favorite Animes
+          </h1>
+
+          <Carousel slideInterval={5000}>{topFavAnimes.components}</Carousel>
+        </div>
+
+        <div className="md:w-full">
+          <h1 className="text-2xl text-center my-5 font-bold ">
+            Favorite Animes
+          </h1>
+
+          <Carousel slideInterval={3000}>{topFavAnimes.components}</Carousel>
+        </div>
       </div>
     </>
   );
 }
-
-const SmallAnimeCard = (animeData: IFullAnime) => {
-  console.log(
-    "Doing something with this data: ",
-    animeData,
-    animeData.images.jpg.large_image_url
-  );
-
-  return (
-    <div className="w-1/4 h-50 my-10 bg-red-700">
-      <Card horizontal={true} imgSrc={animeData.images.jpg.large_image_url}>
-        <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-          {animeData.title_english}
-        </h5>
-        <p className="font-normal text-gray-700 dark:text-gray-400">
-          {animeData.synopsis.substring(0, 150) + "..."}
-        </p>
-      </Card>
-    </div>
-  );
-};

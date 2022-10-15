@@ -21,10 +21,10 @@ export default function NavigationBar() {
           <Link to="/">Home</Link>
         </Navbar.Link>
         <Navbar.Link href="/">
-          <Link to="/">Option 1</Link>
+          <Link to="/">Top Favorites</Link>
         </Navbar.Link>
         <Navbar.Link href="/">
-          <Link to="/">Option 2</Link>
+          <Link to="/">Recommend Anime</Link>
         </Navbar.Link>
         <Navbar.Link>
           {" "}
