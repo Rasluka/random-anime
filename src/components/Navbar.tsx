@@ -21,14 +21,14 @@ export default function NavigationBar() {
           <Link to="/">Home</Link>
         </Navbar.Link>
         <Navbar.Link href="/">
-          <Link to="/">Option @!@</Link>
+          <Link to="/">Option 1</Link>
         </Navbar.Link>
         <Navbar.Link href="/">
-          <Link to="/">Option @!@</Link>
+          <Link to="/">Option 2</Link>
         </Navbar.Link>
         <Navbar.Link>
           {" "}
-          <Link to="/aboutme">About Me V3</Link>
+          <Link to="/aboutme">About Me</Link>
         </Navbar.Link>
       </Navbar.Collapse>
     </Navbar>
